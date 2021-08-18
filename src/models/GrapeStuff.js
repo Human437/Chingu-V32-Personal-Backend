@@ -8,10 +8,10 @@ const GrapeSchema = new mongoose.Schema({
     type: String,
   },
   components: {
-    type: Object,
+    type: Array,
   },
   styles: {
-    type: Object,
+    type: Array,
   },
 });
 
