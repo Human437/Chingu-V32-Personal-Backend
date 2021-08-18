@@ -7,6 +7,7 @@ const helmet = require("helmet");
 const authenticationRoute = require("./src/routes/authentication");
 const userFunctionsRoute = require("./src/routes/userFunctions");
 const productRoutes = require("./src/routes/productRoutes");
+const grapeJsRoutes = require("./src/routes/grapeJsRoutes");
 
 dotenv.config();
 app.use(cors());
@@ -35,6 +36,7 @@ mongoose
 app.use("/api/auth", authenticationRoute);
 app.use("/api/userFunctions", userFunctionsRoute);
 app.use("/api/productRoutes", productRoutes);
+app.use("/api/grapeJsRoutes", grapeJsRoutes);
 
 // if (process.env.NODE_ENV === "production") {
 //   app.use(express.static("../frontend/build"));
